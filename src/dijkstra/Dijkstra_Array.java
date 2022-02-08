@@ -1,4 +1,4 @@
-package Dijkstra;
+package dijkstra;
 
 /**
  * 선형 탐색 다익스트라 알고리즘은 시간 복잡도가 N*N 이기 때문에,
