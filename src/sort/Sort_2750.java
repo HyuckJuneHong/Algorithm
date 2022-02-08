@@ -1,4 +1,4 @@
-package 백준;
+package sort;
 
 import java.util.Scanner;
 

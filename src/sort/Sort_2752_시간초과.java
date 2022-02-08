@@ -1,8 +1,8 @@
-package 백준;
+package sort;
 
 import java.util.Scanner;
 
-public class Sort_2752 {
+public class Sort_2752_시간초과 {
 
     public static void main(String[] args){
 
