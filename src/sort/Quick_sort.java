@@ -1,5 +1,7 @@
 package sort;
 
+import java.util.*;
+
 /** Quick Sort (퀵 정렬)
  * - 특정한 값을 기준으로 큰 숫자와 작은 숫자로 나누는 방법
  *   예시) 일반적으로 퀵 정렬엔 기준 값이 있는데, 이를 피벗(Pivot)이라 한다.

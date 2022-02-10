@@ -1,8 +1,9 @@
-package sort;
+package sort.baekjoon;
 
+import java.io.*;
 import java.util.Scanner;
 
-public class Sort_2751 {
+public class Sort_2751_시간초과 {
 
     public static void quickSort(int arr[], int left, int right){
 
@@ -35,22 +36,24 @@ public class Sort_2751 {
         quickSort(arr, r+1, right);
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException {
 
-        Scanner sc = new Scanner(System.in);
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        int n = Integer.parseInt(br.readLine());
+        int arr[] = new int[n];
 
-        int size = sc.nextInt();
-        int arr[] = new int[size];
 
-
-        for(int i=0; i<size; i++){
-            arr[i] = sc.nextInt();
+        for(int i=0; i<n; i++){
+            arr[i] = Integer.parseInt(br.readLine());
         }
-        quickSort(arr, 0, size-1);
+        quickSort(arr, 0, n-1);
 
-        for(int i=0; i<size; i++){
-            System.out.println(arr[i]);
+        for(int i=0; i<n; i++){
+            bw.write(arr[i] + "\n");
+            bw.flush();
         }
+        bw.close();
 
     }
 }

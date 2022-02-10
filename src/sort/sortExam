@@ -1,0 +1,13 @@
+        List<Integer> list = new ArrayList<>();
+        Collections.sort(list);
+        list.sort((o1, o2) -> o1 - o2);
+        list.sort(Comparator.comparing(Integer::intValue));
+        Collections.sort(list, new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o1-o2;
+            }
+        });
+
+        int[] arr2 = new int[10];
+        Arrays.sort(arr2);
